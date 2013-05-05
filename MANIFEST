@@ -16,6 +16,11 @@ t/Video-Chapter-One/00-use.t
 t/Video-Chapter-One/01-version.t
 t/Video-Chapter-One/02-pod_coverage.t
 t/Video-Chapter-One/03-pod.t
+t/Video-Chapter-One/04-new.t
+t/Video-Chapter-One/05-item.t
+t/Video-Chapter-One/06-name.t
+t/Video-Chapter-One/07-time_from.t
+t/Video-Chapter-One/08-time_to.t
 t/Video-Chapter/00-use.t
 t/Video-Chapter/01-version.t
 t/Video-Chapter/02-pod_coverage.t
