@@ -59,7 +59,9 @@ sub time_from {
 	my ($self, $time_from) = @_;
 	if ($time_from) {
 		$self->{'time_from'} = $time_from;
-		if (! defined $self->{'time_to'}) {
+		if (! defined $self->{'time_to'}
+			|| $self->{'time_to'} < $self->{'time_from'}) {
+
 			$self->{'time_to'} = $time_from;
 		}
 	}
