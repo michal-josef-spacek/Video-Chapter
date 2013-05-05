@@ -1,0 +1,22 @@
+Changes
+Chapter.pm
+Chapter/One.pm
+inc/Module/Install.pm
+inc/Module/Install/Base.pm
+inc/Module/Install/Can.pm
+inc/Module/Install/Fetch.pm
+inc/Module/Install/Makefile.pm
+inc/Module/Install/Metadata.pm
+inc/Module/Install/Win32.pm
+inc/Module/Install/WriteAll.pm
+Makefile.PL
+MANIFEST			This list of files
+META.yml
+t/Video-Chapter-One/00-use.t
+t/Video-Chapter-One/01-version.t
+t/Video-Chapter-One/02-pod_coverage.t
+t/Video-Chapter-One/03-pod.t
+t/Video-Chapter/00-use.t
+t/Video-Chapter/01-version.t
+t/Video-Chapter/02-pod_coverage.t
+t/Video-Chapter/03-pod.t
