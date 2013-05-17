@@ -6,6 +6,8 @@ use warnings;
 
 # Modules.
 use Class::Utils qw(set_params);
+use Error::Pure qw(err);
+use Scalar::Util qw(blessed);
 
 # Version.
 our $VERSION = 0.01;
@@ -31,6 +33,16 @@ sub new {
 
 	# Process parameters.
 	set_params($self, @params);
+
+	# Check text.
+	if (! defined $self->{'text'} || ref $self->{'text'} ne 'ARRAY') {
+		err "Parameter 'text' must be array.";
+	}
+	foreach my $text (@{$self->{'text'}}) {
+		if (! blessed($text) || ! $text->isa('Video::Chapter::Text')) {
+			err "Text item must be a Video::Chapter::Text object.";
+		}
+	}
 
 	# Object.
 	return $self;
