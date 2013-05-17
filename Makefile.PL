@@ -10,11 +10,9 @@ abstract 'Perl module for video chapters.';
 author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'Video-Chapter';
-requires 'Cwd' => 0;
-requires 'English' => 0;
-requires 'Exporter' => 0;
-requires 'List::MoreUtils' => 0;
-requires 'Readonly' => 0;
+requires 'Class::Utils' => 0.03;
+requires 'Error::Pure' => 0.09;
+requires 'Scalar::Util' => 0;
 resources 'bugtracker' => 'https://rt.cpan.org/Public/Dist/Display.html'.
 	'?Name=Video-Chapter';
 resources 'homepage' => 'https://github.com/tupinek/Video-Chapter';
