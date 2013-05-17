@@ -1,6 +1,7 @@
 Changes
 Chapter.pm
 Chapter/One.pm
+Chapter/Text.pm
 inc/Module/Install.pm
 inc/Module/Install/Base.pm
 inc/Module/Install/Can.pm
@@ -20,6 +21,11 @@ t/Video-Chapter-One/04-new.t
 t/Video-Chapter-One/05-item.t
 t/Video-Chapter-One/06-time_from.t
 t/Video-Chapter-One/07-time_to.t
+t/Video-Chapter-Text/00-use.t
+t/Video-Chapter-Text/01-version.t
+t/Video-Chapter-Text/02-pod_coverage.t
+t/Video-Chapter-Text/03-pod.t
+t/Video-Chapter-Text/04-name.t
 t/Video-Chapter/00-use.t
 t/Video-Chapter/01-version.t
 t/Video-Chapter/02-pod_coverage.t
