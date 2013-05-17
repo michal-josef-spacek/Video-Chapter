@@ -20,8 +20,8 @@ sub new {
 	# Item.
 	$self->{'item'} = undef;
 
-	# Name.
-	$self->{'name'} = undef;
+	# Texts.
+	$self->{'text'} = [];
 
 	# Time from.
 	$self->{'time_from'} = undef;
@@ -45,13 +45,13 @@ sub item {
 	return $self->{'item'};
 }
 
-# Get or set name.
-sub name {
-	my ($self, $name) = @_;
-	if (defined $name) {
-		$self->{'name'} = $name;
+# Get or set texts.
+sub text {
+	my ($self, @text) = @_;
+	if (@text) {
+		$self->{'text'} = \@text;
 	}
-	return $self->{'name'};
+	return $self->{'text'};
 }
 
 # Get or set time from.
