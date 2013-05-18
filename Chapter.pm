@@ -47,9 +47,12 @@ sub new {
 	return $self;
 }
 
-# Get chapters.
+# Get or set chapters.
 sub chapters {
-	my $self = shift;
+	my ($self, @chapters) = @_;
+	if (@chapters) {
+		$self->{'chapters'} = \@chapters;
+	}
 	return @{$self->{'chapters'}};
 }
 
