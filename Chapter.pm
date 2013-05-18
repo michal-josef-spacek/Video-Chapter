@@ -83,4 +83,10 @@ sub chapter_filter {
 	return @chapters;
 }
 
+# Get id from object.
+sub id {
+	my $self = shift;
+	return $self->{'id'};
+}
+
 1;
