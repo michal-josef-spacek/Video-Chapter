@@ -34,6 +34,9 @@ sub new {
 	}
 
 	# Check for chapters.
+	if (! defined $self->{'chapters'} || ref $self->{'chapters'}) {
+		err "Parameter 'chapters' must be array.";
+	}
 	foreach my $chapter (@{$self->{'chapters'}}) {
 		if (! blessed($chapter) || ! $chapter->isa('Video::Chapter::One')) {
 			err "Chapter must be a 'Video::Chapter::One' object.";
