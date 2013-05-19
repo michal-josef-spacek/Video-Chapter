@@ -93,3 +93,124 @@ sub id {
 }
 
 1;
+
+__END__
+
+=pod
+
+=encoding utf8
+
+=head1 NAME
+
+Video::Chapter - Perl module for manipulating video chapters.
+
+=head1 SYNOPSIS
+
+ use Video::Chapter;
+ my $obj = Video::Chapter(%parameters);
+ my @chapters = $obj->chapters(@chapters);
+ my $id = $obj->id;
+
+=head1 METHODS
+
+=over 8
+
+=item C<new(%parameters)>
+
+ Constructor.
+
+=over 8
+
+=item * C<chapters>
+
+ List of Video::Chapter::One objects.
+ Default value is [].
+
+=item * C<id>
+
+ Chapter object identification.
+ Parameter is required.
+ Default value is undef.
+
+=back
+
+=item C<chapters([@chapters])>
+
+ Get or set chapters.
+ Returns list of Video::Chapter::One objects.
+
+=item C<id()>
+
+ Get identification of object.
+ Returns string with id.
+
+=back
+
+=head1 ERRORS
+
+ new():
+         Chapter must be a 'Video::Chapter::One' object.
+         Parameter 'chapters' must be array.
+         Parameter 'id' is required.
+
+=head1 EXAMPLE
+
+ # Pragmas.
+ use strict;
+ use warnings;
+
+ # Modules.
+ use Video::Chapter;
+ use Video::Chapter::One;
+ use Video::Chapter::Text;
+
+ # Object.
+ my $obj = Video::Chapter->new(
+         'chapters' => [
+                 Video::Chapter::One->new(
+                         'item' => 1,
+                         'text' => Video::Chapter::Text->new(
+                                 'lang' => 'cze',
+                                 'name' => 'Kapitola 1',
+                         ),
+                         'time_from' => 99,
+                         'time_to' => 199,
+                 ),
+                 Video::Chapter::One->new(
+                         'item' => 2,
+                         'time_from' => 199,
+                 ),
+         ],
+         'id' => 'chapter',
+ );
+
+ # TODO
+
+ # Output.
+ # TODO
+
+=head1 DEPENDENCIES
+
+L<Class::Utils>,
+L<Error::Pure>,
+L<Scalar::Util>.
+
+=head1 REPOSITORY
+
+L<https://github.com/tupinek/Video-Chapter>
+
+=head1 AUTHOR
+
+Michal Špaček L<mailto:skim@cpan.org>
+
+L<http://skim.cz>
+
+=head1 LICENSE AND COPYRIGHT
+
+BSD license.
+
+=head1 VERSION
+
+0.01
+
+=cut
