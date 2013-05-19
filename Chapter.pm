@@ -70,7 +70,7 @@ sub chapter_filter {
 			$chapter_filter = $chapter->name;
 		} elsif ($filter eq 'time_from') {
 			$chapter_filter = $chapter->time_from;
-		} elsif ($filter eq 'time_to') {	
+		} elsif ($filter eq 'time_to') {
 			$chapter_filter = $chapter->time_to;
 		} else {
 			err "Filter '$filter' doesn't supported.";
