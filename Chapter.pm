@@ -19,11 +19,11 @@ sub new {
 	# Create object.
 	my $self = bless {}, $class;
 
-	# Id.
-	$self->{'id'} = undef;
-
 	# Chapters.
 	$self->{'chapters'} = [];
+
+	# Id.
+	$self->{'id'} = undef;
 
 	# Process parameters.
 	set_params($self, @params);
