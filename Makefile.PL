@@ -6,7 +6,7 @@ use warnings;
 use inc::Module::Install;
 
 # Definition.
-abstract 'Perl module for video chapters.';
+abstract 'Perl class for video chapters.';
 author 'Michal Špaček <skim@cpan.org>';
 license 'bsd';
 name 'Video-Chapter';

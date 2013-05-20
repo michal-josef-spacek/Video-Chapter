@@ -102,7 +102,7 @@ __END__
 
 =head1 NAME
 
-Video::Chapter - Perl module for manipulating video chapters.
+Video::Chapter - Perl class for manipulating video chapters.
 
 =head1 SYNOPSIS
 
