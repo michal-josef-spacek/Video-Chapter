@@ -2,7 +2,9 @@ TODO
 ====
 1. Name muze byt v danem jazyku a pro danou zemi.
 2. Ve Video::Chapter opravit chapter_filter().
-3.
+3. Vytvorit Class::Print jako obecnou tridu pro tisky. Pridat print() s uzitim
+   Class::Print.
+4.
 
 Applied
 =======
