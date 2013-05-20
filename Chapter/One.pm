@@ -63,7 +63,7 @@ sub text {
 	if (@text) {
 		$self->{'text'} = \@text;
 	}
-	return $self->{'text'};
+	return @{$self->{'text'}};
 }
 
 # Get or set time from.
